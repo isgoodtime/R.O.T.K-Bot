@@ -22,4 +22,5 @@ async def on_message(message):
     if message.content.startswith("!산업"):
         await message.channel.send("산업은 블루플린트를 이용해서 함선, 무기, 등을 만듭니다.\n(자세한 정보는 산업부에서 얻으실수 있습니다.)")
 
-client.run("NjYxMTkyMjMxNTIwMDQzMDM3.Xgn12Q.ODP8h0u9pVcwDAFHAA4fl-3YYo0")
+access_Token = os.environ["BOT_TOKEN"]
+client.run(access_Token)
